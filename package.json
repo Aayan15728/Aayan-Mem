@@ -1,0 +1,85 @@
+{
+    "name": "@aayan/a-mem",
+    "version": "2.0.0",
+    "description": "A.MEM — Zero Token Leak Memory Architecture for AI coding agents. Structured ESM belief state, witness protocol, rejection ledger, and full CLI toolchain.",
+    "author": "Aayan",
+    "license": "MIT",
+    "homepage": "https://github.com/Aayan15728/a-mem#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Aayan15728/a-mem.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Aayan15728/a-mem/issues"
+    },
+    "keywords": [
+        "ai-memory",
+        "agent-memory",
+        "llm",
+        "coding-agent",
+        "epistemic-state-machine",
+        "hallucination-guard",
+        "decision-log",
+        "claude",
+        "gpt",
+        "gemini",
+        "zero-dependency",
+        "cli"
+    ],
+    "bin": {
+        "a-mem": "./a-mem.js"
+    },
+    "main": "./a-mem.js",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "files": [
+        "a-mem.js",
+        "a-mem.cmd",
+        "VERSION",
+        "README.md",
+        "LICENSE",
+        ".Aayan-Mem/Agent/tools/coldstart.js",
+        ".Aayan-Mem/Agent/tools/esm.js",
+        ".Aayan-Mem/Agent/tools/integrity.js",
+        ".Aayan-Mem/Agent/tools/search.js",
+        ".Aayan-Mem/Agent/tools/status.js",
+        ".Aayan-Mem/Agent/tools/sync-index.js",
+        ".Aayan-Mem/Agent/tools/ui.js",
+        ".Aayan-Mem/Agent/tools/validate.js",
+        ".Aayan-Mem/Agent/tools/verify-paths.js",
+        ".Aayan-Mem/Agent/rules.md",
+        ".Aayan-Mem/Agent/session-template.md",
+        ".Aayan-Mem/Agent/decision-index.md",
+        ".Aayan-Mem/Agent/session-counter.json",
+        ".Aayan-Mem/Agent/decision-logs/session-1.md",
+        ".Aayan-Mem/Memory-&-Context/App-Goal.md",
+        ".Aayan-Mem/Memory-&-Context/Stack.md",
+        ".Aayan-Mem/Memory-&-Context/Context-index.md",
+        ".Aayan-Mem/Memory-&-Context/Design-Guidelines.md",
+        ".Aayan-Mem/Memory-&-Context/rules.md",
+        ".Aayan-Mem/Memory-&-Context/Rejection-Ledger.md"
+    ],
+    "scripts": {
+        "start": "node a-mem.js",
+        "status": "node a-mem.js status",
+        "validate": "node a-mem.js validate",
+        "integrity": "node a-mem.js integrity",
+        "verify": "node a-mem.js verify",
+        "verify:logs": "node a-mem.js verify --scan-logs",
+        "coldstart": "node a-mem.js coldstart",
+        "esm": "node a-mem.js esm",
+        "log": "node a-mem.js log",
+        "list": "node a-mem.js list",
+        "sync": "node a-mem.js sync",
+        "init": "node a-mem.js init",
+        "help": "node a-mem.js help",
+        "find": "node a-mem.js find",
+        "search": "node a-mem.js find",
+        "new": "node a-mem.js new",
+        "close": "node a-mem.js close",
+        "lint": "node --check a-mem.js && node --check .Aayan-Mem/Agent/tools/esm.js && node --check .Aayan-Mem/Agent/tools/ui.js && node --check .Aayan-Mem/Agent/tools/status.js && node --check .Aayan-Mem/Agent/tools/validate.js && node --check .Aayan-Mem/Agent/tools/coldstart.js && node --check .Aayan-Mem/Agent/tools/search.js && node --check .Aayan-Mem/Agent/tools/verify-paths.js && node --check .Aayan-Mem/Agent/tools/sync-index.js && node --check .Aayan-Mem/Agent/tools/integrity.js",
+        "test": "node a-mem.js integrity --strict"
+    },
+    "preferGlobal": true
+}

@@ -1,0 +1,38 @@
+# ── OS metadata ─────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# ── Node.js ──────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-error.log
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ── Personal memory data ─────────────────────────────────────
+# Decision logs are project-private. The template ships; real logs don't.
+.Aayan-Mem/Agent/decision-logs/
+# Real session counter resets per-project on install
+# session-counter.json is tracked so init works out of the box
+
+# ── Build / temp ─────────────────────────────────────────────
+tmp/
+dist/
+*.tmp
+*.log
+*.cache
+
+# ── Website / docs source (not part of the CLI tool) ─────────
+docs/*.html
+index.html
+readit/
+app.md
+update-sidebar.js
+
+# ── Personal notes (not shipped) ─────────────────────────────
+cons-and-estimate.md
+cons-and-estimste.md
