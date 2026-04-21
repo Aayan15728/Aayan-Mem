@@ -1,0 +1,31 @@
+# .npmignore — what npm publish EXCLUDES from the package
+# This file overrides .gitignore for npm.
+# ONLY the files listed in package.json "files" array get shipped.
+# Everything else below is here as an explicit safety net.
+
+# Website / docs (not the CLI tool)
+docs/
+index.html
+readit/
+app.md
+update-sidebar.js
+
+# Personal notes
+cons-and-estimate.md
+cons-and-estimste.md
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Dev artifacts
+node_modules/
+npm-debug.log*
+*.tmp
+*.cache
+.gitignore
+
+# User's private session data — never ships with the package
+.Aayan-Mem/Agent/decision-logs/session-[2-9].md
+.Aayan-Mem/Agent/decision-logs/session-[0-9][0-9].md

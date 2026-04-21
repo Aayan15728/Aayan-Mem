@@ -1,16 +1,16 @@
 {
-    "name": "@aayan/a-mem",
+    "name": "aayan-mem",
     "version": "2.0.0",
-    "description": "A.MEM — Zero Token Leak Memory Architecture for AI coding agents. Structured ESM belief state, witness protocol, rejection ledger, and full CLI toolchain.",
+    "description": "Aayan.MEM — Zero Token Leak Memory Architecture for AI coding agents. Structured ESM belief state, witness protocol, rejection ledger, and full CLI toolchain.",
     "author": "Aayan",
     "license": "MIT",
-    "homepage": "https://github.com/Aayan15728/a-mem#readme",
+    "homepage": "https://github.com/Aayan15728/Aayan-mem#readme",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Aayan15728/a-mem.git"
+        "url": "git+https://github.com/Aayan15728/Aayan-mem.git"
     },
     "bugs": {
-        "url": "https://github.com/Aayan15728/a-mem/issues"
+        "url": "https://github.com/Aayan15728/Aayan-mem/issues"
     },
     "keywords": [
         "ai-memory",
@@ -27,7 +27,7 @@
         "cli"
     ],
     "bin": {
-        "a-mem": "./a-mem.js"
+        "a-mem": "a-mem.js"
     },
     "main": "./a-mem.js",
     "engines": {

@@ -27,6 +27,7 @@ dist/
 *.cache
 
 # ── Website / docs source (not part of the CLI tool) ─────────
+docs/
 docs/*.html
 index.html
 readit/
